@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Formulario de Compra</h1>
+    <p>Completa tus datos para finalizar el proceso</p>
+  </header>
+
+  <main>
+    <form id="formulario-compra" class="formulario">
+      <label>Nombre completo:<br><input type="text" name="nombre" required /></label><br><br>
+      <label>Correo electrónico:<br><input type="email" name="email" required /></label><br><br>
+      <label>Teléfono de contacto:<br><input type="tel" name="telefono" required /></label><br><br>
+      <label>Comentarios (opcional):<br><textarea name="comentarios"></textarea></label><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+  <div id="mensaje-confirmacion" style="
+    display: none;
+    margin: 190px auto;
+    padding: 30px;
+    max-width: 1200px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2c3e50;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.9em;
+    border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    ">
+        ¡Gracias! Pronto nos contactaremos contigo.
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Carvajal Urban Luxo | Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    document.getElementById("formulario-compra").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("formulario-compra").style.display = "none";
+      document.getElementById("mensaje-confirmacion").style.display = "block";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARVAJAL URBAN LUXO</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <header>
+    <h1>CARVAJAL URBAN LUXO</h1>
+    <p>Lujo en cada destino</p>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Categorías</h2>
+      <ul class="lista-categorias">
+        <li><a href="electricos.html">🚗 Eléctricos</a></li>
+        <li><a href="gasolina.html">⛽ Gasolina</a></li>
+        <li><a href="hibridos.html">♻️ Híbridos</a></li>
+        <li><a href="deportivos.html">🏎️ Deportivos</a></li>
+      </ul>
+      <h2>Precio</h2>
+   <ul>
+        <li><label><input type="checkbox" name="filtro-precio" data-min="0" data-max="100000000"> Hasta $100M</label></li>
+        <li><label><input type="checkbox" name="filtro-precio" data-min="100000001" data-max="200000000"> $100M - $200M</label></li>
+        <li><label><input type="checkbox" name="filtro-precio" data-min="200000001" data-max="500000000"> $200M - $500M</label></li>
+        <li><label><input type="checkbox" name="filtro-precio" data-min="500000001" data-max="1000000000"> $500M - $1.000M</label></li>
+        <li><label><input type="checkbox" name="filtro-precio" data-min="1000000001" data-max="2000000000"> Más de $1.000M</label></li>
+      </ul>
+    </aside>
+
+    <main class="productos">
+      <div class="card destacado" data-precio="320000000">
+       <div class="slider">
+      <img src="img/tesla1.jfif" alt="Tesla Model S" />
+      <img src="img/tesla2.jfif" alt="Tesla Model S" />
+      <img src="img/tesla3.jfif" alt="Tesla Model S" />
+    </div>
+        <h3>Tesla Model S</h3>
+        <p class="precio">$320.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="410000000">
+        <img src="img/BMW M4 2024.PNG" alt="BMW M4 2024" />
+        <h3>BMW M4 2024</h3>
+        <p class="precio">$410.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="98000000">
+        <img src="img/kIA Sonet.PNG" alt="KIA Sonet" />
+        <h3>KIA Sonet</h3>
+        <p class="precio">$98.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="78900000">
+        <img src="img/Chevrolet Onix.png"Chevrolet Onix" />
+        <h3>Chevrolet Onix</h3>
+        <p class="precio">$78.900.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="1250000000">
+        <img src="img/Ferrari 488.png" alt="Ferrari 488" />
+        <h3>Ferrari 488</h3>
+        <p class="precio">$1.250.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="210000000">
+        <img src="img/Jeep Wrangler.png" alt="Jeep Wrangler" />
+        <h3>Jeep Wrangler</h3>
+        <p class="precio">$210.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="260000000">
+        <img src="img/Chevrolet Camaro.png" alt="Chevrolet Camaro" />
+        <h3>Chevrolet Camaro</h3>
+        <p class="precio">$260.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="180000000">
+        <img src="img/Mazda MX-5 Miata.png" alt="Mazda MX-5 Miata" />
+        <h3>Mazda MX-5 Miata</h3>
+        <p class="precio">$180.000.000</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card" data-precio="270000000">
+        <img src="img/Ford Mustang GT.png" alt="Ford Mustang GT" />
+        <h3>Ford Mustang GT</h3>
+        <p class="precio">$270.000.000</p>
+        <button>Comprar</button>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Carvajal Urban Luxo | Todos los derechos reservados</p>
+  </footer>
+          <script src="script.js"></script>
+</body>
+</html>
