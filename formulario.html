@@ -10,6 +10,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario de contacto</title>
   <link rel="stylesheet" href="estilos.css" />
+
+<style>
+  .encabezado {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+  .info-empresa {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nombre-empresa {
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .eslogan {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+      width: 40px;
+    }
+    .nombre-empresa {
+      font-size: 1rem;
+    }
+    .eslogan {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
 </head>
 <body>
   <div class="encabezado-principal">
