@@ -311,7 +311,7 @@ footer {
   }
 
   header h1 {
-    font-size: 1.3em;
+    font-size: 6vw;
     white-space: nowrap;
     text-align: center;
     margin: 20px 10px;
@@ -323,5 +323,18 @@ footer {
 
   .logo {
     width: 45px;
+  }
+}
+
+.nombre-empresa {
+  white-space: nowrap;        /* Evita que se divida en dos líneas */
+  font-size: 5vw;             /* Ajusta el tamaño en pantallas pequeñas */
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2rem;        /* Tamaño normal en tablet o desktop */
   }
 }
